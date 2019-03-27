@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <div class="container" onload="listAllItems()">
+    <div class="split left">
+        <ul id="menu"></ul>
+       
+        ENTER THE TITLE:<br>
+        <input type ="text" id="title" size="30"><br>
+        <br>
+        ENTER THE CONTENTS:<textarea rows="4" cols="50" placeholder="Describe here..." id="content"></textarea>
+        <button onclick="addNewElement()">ADD</button>
+        
+    </div>
+   
+    <div class="split right">
+        <textarea rows="4" cols="50" id="display"></textarea>
+        <!-- <ul id="display"></ul> -->
+    </div>
+</div>
+</body>
+<script src="list.js"></script>
+</html>  

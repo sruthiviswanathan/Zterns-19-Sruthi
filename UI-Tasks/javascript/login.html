@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="http://192.168.100.162:3000/auth/login" method="post">
+ 
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="pwd" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit" onclick="checklogin()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+</body>
+<script src = login.js></script>
+</html>

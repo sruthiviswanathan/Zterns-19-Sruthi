@@ -1,0 +1,315 @@
+body{
+    margin:0;
+    width:100%;
+    height:100vh;
+}
+
+.button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin:0px 20px 15px -20px;
+}
+
+
+
+.tit {
+  color: dodgerblue;
+  text-align: center;
+  background-color: #ccc;
+  padding:5px
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    background-color:  dodgerblue;
+    font-weight: bold;
+    
+}
+
+li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    background-color: dodgerblue;
+    border: transparent;
+}
+
+li a:hover {
+    opacity: 0.8;
+}
+
+a:active, a:hover {
+    opacity: 0.8;
+}
+
+input[type=text] {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin:0px 10px 15px 0px;
+  }
+  
+p {
+  margin:10px;
+}
+
+.col-10 {
+    float: left;
+    width: 10%;
+    margin-top: 20px;
+    margin-left:20px; 
+}
+
+  .col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+    margin-left:20px;
+  }
+  
+  .col-60 {
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  label {
+    /* padding: 12px 12px 12px -25px; */
+    padding: 12px 12px 12px -1px;
+    display: inline-block;
+    color: #1565c0;
+    font-weight: bold;
+    margin-right:5px;
+    margin-top : 20px;
+  }
+
+  .icon {
+    color:dodgerblue;
+    float:right;
+    position:relative;
+    top: -43px;
+    right: 10px;
+  }
+
+  input[type=submit] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:0px 20px 15px 10px;
+  }
+  
+  .maincard {
+    display:inline-block;
+    margin:25px 6px -1px 3px;
+    height: 50%;
+  }
+
+
+.maincard div {
+    box-sizing: border-box;
+    border: 1px solid white;
+    float: left;
+    
+}
+
+.container {
+    width:100%;
+    margin:10px;
+    border-radius: 5px;
+    padding: 20px;
+   
+  }
+
+.card {
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   }
+  
+    input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width:320px){ 
+      .col-20, .col-60, input[type=submit],.col-10,button,.modal {
+          width: 100%;
+          
+        }
+        .col-xs-height {
+            height: 60%;
+            width: 100%;
+            }
+      }
+  
+  @media (min-width:321px) and (max-width:1167px){
+    .col-20, .col-60, input[type=submit], .col-10,.button,.modal { 
+        width: 100%;
+       
+      }
+      .col-sm-6 {
+        width: 50%;
+    }
+    }
+
+  
+    .fa-user-circle,.fa-pencil-square-o{
+      margin-right: 6px;
+    }
+  
+      .fa-bars{
+          float: left;
+          margin-top: 13px;
+          margin-left: 5px;
+      
+        }
+      
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: absolute;
+          z-index: 1;
+          top: 45px;
+          left: 0;
+          background-color: lightskyblue;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          overflow: hidden;
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 16px;
+          display: block;
+          transition: 0.3s;
+          color: black;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+      
+        ul button{
+            border:none;
+        }
+      
+        .hambug{
+            float:left;
+            background-color:dodgerblue ;
+            font-size: 18px;
+            color: white;
+        }
+
+        .header img {
+          float: left;
+          width: 100px;
+          height: 100px;
+          background: #555;
+        }
+        
+        .header h2 {
+            color: #424242;
+          position: relative;
+          top: -9px;
+          left: 10px;
+        }
+
+        .dir{
+            color:white;
+            float:right;
+            position:relative;
+            top: 10px;
+            left: 140px; 
+        }
+
+        h4 {
+            color: #424242;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          }
+          
+          /* Modal Content */
+          .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+          }
+          
+          /* The Close Button */
+          .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          
+          .close:hover,.close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+          }

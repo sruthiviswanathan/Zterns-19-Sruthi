@@ -1,0 +1,235 @@
+body{
+
+     margin :0px;
+    height:100vh;
+       
+}
+
+.tit {
+  color: dodgerblue;
+  text-align: center;
+  background-color: #ccc;
+  padding:5px;
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    background-color:  dodgerblue;
+    font-weight: bold;
+    
+}
+
+li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: dodgerblue;
+    border: transparent;
+}
+
+li a:hover {
+    opacity: 0.8;
+}
+
+a:active, a:hover {
+    opacity: 0.8;
+}
+
+
+  
+  input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+.icon {
+  color:dodgerblue;
+  float:right;
+  position:relative;
+  top: -29px;
+  right: 10px;
+}
+
+  .col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+    margin-left:20px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color:dodgerblue;
+    font-weight: bold;
+    margin-right:5px;
+  }
+  
+  input[type=submit] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+
+.maincard {
+    display:block;
+    margin:25px 6px -1px 3px;
+    height: 50%;
+  }
+
+
+.maincard div {
+    box-sizing: border-box;
+    border: 1px solid white;
+    float: left;
+    
+}
+
+.container {
+    width:100%;
+    margin:10px;
+    border-radius: 5px;
+    padding: 20px;
+   
+  }
+
+.card {
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   }
+    
+.name h1 {
+    text-align: center;
+    margin: 47px 238px -46px 168px;
+}
+
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .fa-user-circle,.fa-pencil-square-o{
+    margin-right: 6px;
+  }
+
+    .fa-bars{
+        float: left;
+        margin-top: 13px;
+        margin-left: 5px;
+    
+      }
+    
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        left: 0;
+        background-color: lightskyblue;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        overflow: hidden;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        transition: 0.3s;
+        color: black;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+    
+      ul button{
+          border:none;
+      }
+    
+      .hambug{
+          float:left;
+          background-color:dodgerblue ;
+          font-size: 18px;
+          color: white;
+      }
+    
+      @media (max-width:320px){ 
+        .col-xs-height {
+          height: 60%;
+          width: 100%;
+          }
+
+          .col-xs-12,input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+
+      
+      @media (min-width:321px) and (max-width:768px){
+          .col-sm-6 {
+              width: 50%;
+          }
+       
+          .col-sm-12,input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+    

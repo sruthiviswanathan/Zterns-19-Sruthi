@@ -1,0 +1,123 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  }
+  
+.navbar {
+    position: fixed;
+    width: 100%;
+	  padding: 5px 5px;
+    background-color: dodgerblue;
+  }
+.f1 {
+      color: dodgerblue;
+  }
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    margin-left: 100px;
+    width: 600px;
+    font-size: 17px;
+    border: none;
+  }
+  
+button {
+    color: dodgerblue;
+    padding: 6px;
+    margin-top: 8px;
+    background: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    float: right;
+    position: relative;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 17px;  
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+.dropbtn{
+    position: relative;
+  }
+.navbar a:hover{
+    background-color: dodgerblue;
+  }
+
+.dropdown-content {
+    min-width: 200px;;
+    display: none;
+    margin-top:5px;
+    position: absolute;
+    background-color:white;
+    box-shadow:grey;
+    font-size: 16px;
+    border: 1px solid #c7c7c7;
+    border-top-color: white;
+    left: -40px;;
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 100px;
+  }
+  
+.dropdown-content a:hover,.dropdown-content a:hover > i {
+    cursor: pointer;
+    background-color: #2874f0;
+    color: white;
+    font-weight: bold;
+  }
+  
+.dropdown:hover .dropdown-content,.dropdown:hover .arrowup {
+    display: block;
+  }
+.cart{
+    position: relative;
+}
+#cart_no{
+    background-color: #fe5b5b;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 2px 4px;
+    font-size: 8px;
+    position: absolute;
+    bottom: 32px;
+    left: 25px;
+}
+.arrowup{
+  position: absolute;
+  top: 40px;
+  width: 0px;
+  height: 0px;
+  left: 30px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid white;
+  display: none;
+  }
+  
