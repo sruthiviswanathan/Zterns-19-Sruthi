@@ -85,7 +85,10 @@ public class EmployeeDelegate {
 				throw new DepartmentNotFoundException();
 			}
 
-		} catch (DepartmentNotFoundException e) {
+		}catch (EmployeeNotFoundException e) {
+			throw e;
+		} 
+		catch (DepartmentNotFoundException e) {
 			throw e;
 		}catch(EmailAlreadyExistsException e) {
 			throw e;
@@ -109,7 +112,7 @@ public class EmployeeDelegate {
 		return message;
 	}
 
-	public boolean saveSpeciality(int id,Speciality speciality)throws ApplicationException {
+	public boolean saveSpeciality(int id,List<Speciality> speciality)throws ApplicationException {
 		// TODO Auto-generated method stub
 		boolean flag;
 		try {

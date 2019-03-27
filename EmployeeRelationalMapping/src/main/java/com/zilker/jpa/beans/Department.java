@@ -2,7 +2,7 @@ package com.zilker.jpa.beans;
 
 import java.util.List;
 
-
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,7 +22,7 @@ public class Department {
 	@Column(name="name")
 	private String name;
 	
-	@OneToMany(mappedBy="department",fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="department",fetch=FetchType.EAGER,cascade=CascadeType.REMOVE)
 	private List<Employee> employees;
 	
 	public int getId() {

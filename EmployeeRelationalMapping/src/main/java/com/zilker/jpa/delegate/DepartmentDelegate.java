@@ -39,4 +39,17 @@ public class DepartmentDelegate {
 		return employeeList;
 	}
 
+	public String DeleteDepartment(int id)throws ApplicationException {
+		// TODO Auto-generated method stub
+		String message="";
+		try {
+			
+			message = departmentDao.DeleteDepartment(id);
+			
+		}catch(Exception e) {
+			throw new ApplicationException("Exception","Exception");
+		}
+		return message;
+	}
+
 }

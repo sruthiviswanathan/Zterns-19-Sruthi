@@ -100,7 +100,7 @@ public class EmployeeController {
 	}
 	
 	@PostMapping("employees/speciality/{userId}")
-	public <T> ResponseEntity<?>  AddSpecialtyEmployee(@PathVariable("userId") int id,@RequestBody Speciality speciality) {
+	public <T> ResponseEntity<?>  AddSpecialtyEmployee(@PathVariable("userId") int id,@RequestBody List<Speciality> speciality) {
 		boolean flag;
 		
 		try {

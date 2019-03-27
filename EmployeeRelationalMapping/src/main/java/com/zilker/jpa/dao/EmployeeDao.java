@@ -75,10 +75,32 @@ public class EmployeeDao {
 	public List<Employee> viewEmployeeDetails() throws ApplicationException {
 		// TODO Auto-generated method stub
 		List <Employee> employeeList = new ArrayList<Employee>();
-
+		List <EmployeeSpeciality> empspl = new ArrayList <EmployeeSpeciality>();
+		List <Speciality> spl = new ArrayList <Speciality>();
+		
+		String specialty;
 		try {
 			employeeList = employeeRepository.findAll();
-
+			for(int i=0;i<employeeList.size();i++) {
+				empspl = employeeList.get(i).getSpecialityList();
+				//System.out.println("emp"+empspl.size());
+				if(empspl.isEmpty()) {
+				
+				}else {
+					for(int j=0;j<empspl.size();j++) {		
+						
+					specialty = specialityRepository.findById(empspl.get(j).getSpecialityId());
+					Speciality special = new Speciality();
+					special.setId(empspl.get(j).getSpecialityId());
+					special.setName(specialty);
+					spl.add(special);
+					employeeList.get(i).setSpeciality(spl);
+				
+					}
+				}
+				
+			}
+			
 		} catch (Exception e) {
 			throw new ApplicationException("SQL_EXP","SQLException");
 		}
@@ -164,12 +186,16 @@ public class EmployeeDao {
 		return message;
 	}
 
-	public boolean saveSpeciality(int id,Speciality speciality)throws ApplicationException {
+	public boolean saveSpeciality(int id,List<Speciality> specialities)throws ApplicationException {
 		// TODO Auto-generated method stub
-		EmployeeSpeciality employees = new EmployeeSpeciality();
+		
+		Speciality speciality = new Speciality();
 		int specialityId= 0;
-		boolean flag,status;
+		boolean flag,status=false;
 		try {
+		for(int i=0; i< specialities.size();i++) {
+			EmployeeSpeciality employees = new EmployeeSpeciality();
+			speciality.setName(specialities.get(i).getName());
 			if(employeeRepository.existsById(id)) {
 			employees.setEmployeeId(id);
 			flag = specialityRepository.existsByName(speciality.getName());
@@ -188,10 +214,14 @@ public class EmployeeDao {
 			}else {
 				
 				throw new EmployeeNotFoundException();
+			
 			}
-			}catch (EmployeeNotFoundException e) {
+		}
+		}catch (EmployeeNotFoundException e) {
 				throw e;
-			}catch(Exception e) {
+		}
+		catch(Exception e) {
+				System.out.println(e);
 				throw new ApplicationException("SQL_EXP","SQLException");
 			
 			}

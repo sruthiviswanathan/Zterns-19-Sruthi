@@ -10,6 +10,7 @@ import com.zilker.jpa.beans.Department;
 import com.zilker.jpa.beans.Employee;
 import com.zilker.jpa.customException.ApplicationException;
 import com.zilker.jpa.customException.DepartmentNotFoundException;
+import com.zilker.jpa.customException.EmployeeNotFoundException;
 import com.zilker.jpa.repository.DepartmentRepository;
 import com.zilker.jpa.repository.EmployeeRepository;
 
@@ -45,6 +46,26 @@ public class DepartmentDao {
 			throw new ApplicationException("SQL_EXP","SQLException");
 		}
 		return employeeList;
+	}
+
+
+	public String DeleteDepartment(int id)throws ApplicationException {
+		// TODO Auto-generated method stub
+		String message = "";
+		try {
+			if(departmentRepository.existsById(id)) {
+				departmentRepository.deleteById(id);
+			message="Success";
+			}else {
+				throw new DepartmentNotFoundException();
+			}
+		}catch (DepartmentNotFoundException e) {
+			throw e;
+		}
+		catch(Exception e) {
+			throw new ApplicationException("SQL_EXP","SQLException");
+		}
+		return message;
 	}
 
 }

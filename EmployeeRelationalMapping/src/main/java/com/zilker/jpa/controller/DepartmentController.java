@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +31,20 @@ public class DepartmentController {
 		
 			employeeList = departmentDelegate.viewEmployeesInDepartment(department);
 			return reponseGeneratorUtil.successResponse(employeeList);
+		
+		}catch(ApplicationException e) {
+			return reponseGeneratorUtil.errorResponse(e);
+		}
+		
+	}
+	
+	@DeleteMapping("/department/{deptId}")
+	public <T> ResponseEntity<?>  DeleteDepartment(@PathVariable("deptId") int id) {
+		String message = "";
+		try {	
+		
+			message = departmentDelegate.DeleteDepartment(id);
+			return reponseGeneratorUtil.successResponse(message);
 		
 		}catch(ApplicationException e) {
 			return reponseGeneratorUtil.errorResponse(e);

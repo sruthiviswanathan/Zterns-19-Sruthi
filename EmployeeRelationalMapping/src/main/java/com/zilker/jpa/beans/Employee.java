@@ -12,6 +12,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="employee")
@@ -44,10 +47,13 @@ public class Employee {
 	@JoinColumn(name="address_id")
 	private Address address;
 	
-	
-	@OneToMany(mappedBy="employeeId")
+
+    @JsonIgnore
+	@OneToMany(mappedBy="employeeId",cascade=CascadeType.REMOVE)
 	private List<EmployeeSpeciality> specialityList;
 	
+	@Transient
+	private List<Speciality> speciality;
 	
 	public int getId() {
 		return id;
@@ -106,11 +112,18 @@ public class Employee {
 	public void setSpecialityList(List<EmployeeSpeciality> specialityList) {
 		this.specialityList = specialityList;
 	}
+	
+	public List<Speciality> getSpeciality() {
+		return speciality;
+	}
+	public void setSpeciality(List<Speciality> speciality) {
+		this.speciality = speciality;
+	}
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", phoneNumber=" + phoneNumber + ", salary=" + salary + ", department=" + department + ", address="
-				+ address + ", specialityList=" + specialityList + "]";
+				+ address + ", specialityList=" + specialityList + ", speciality=" + speciality + "]";
 	}
 
 	

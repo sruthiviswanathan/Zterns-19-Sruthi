@@ -21,6 +21,8 @@ public class EmployeeSpeciality {
 	@Column(name="specialty_id")
 	private int specialityId;
 
+	
+	
 	public int getEmployeeId() {
 		return employeeId;
 	}
@@ -36,6 +38,13 @@ public class EmployeeSpeciality {
 	public void setSpecialityId(int specialityId) {
 		this.specialityId = specialityId;
 	}
+
+	@Override
+	public String toString() {
+		return "EmployeeSpeciality [employeeId=" + employeeId + ", specialityId=" + specialityId + "]";
+	}
+
+	
 
 	
 	
