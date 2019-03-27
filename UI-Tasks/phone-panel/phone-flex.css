@@ -1,0 +1,96 @@
+body{
+    height:350px;
+    width:500px;
+}
+.container{
+    height:100%;
+    width:100%;
+}
+.row {
+    display: flex;
+
+}
+
+.row div {
+    border:1px solid black;
+    height: 150px;
+}
+.red{
+    flex-basis:70%;
+    background-color:red;
+}
+.blue{
+    flex-basis:30%;
+    background-color: blue;
+}
+.orange{
+    flex-basis:30%;
+    background-color: orange;
+    
+}
+
+.minibox {
+    display: flex;
+    flex-wrap: wrap;
+    height:100%;
+    width: 100%;
+    border:1px solid black;   
+}
+.yellow{
+    height: 50% !important;
+    flex-basis:48%;
+    background-color:yellow;
+    border: 1px solid black;
+}
+.green{
+    flex-basis:30%;
+    flex-grow:1;
+    background-color: green;
+    
+}
+.divide {
+    display: flex;
+    flex-direction:column;
+    height:100%;
+    width: 100%;
+    border:1px solid black;   
+}
+.pink{
+    height:70%;
+    flex-grow:2;
+    background-color: pink;
+}
+.violet{
+    height:30%;
+    flex-grow:1;
+    background-color: violet;
+}
+.divide1 {
+    display: flex;
+    flex-direction:row;
+    height:50% !important;
+    width: 100%;
+    border:1px solid black;   
+}
+.lime{
+    width:70%;
+    flex-grow:2;
+    background-color: lime;
+}
+.lemon{
+    width:30%;
+    flex-grow:1;
+    background-color:limegreen;
+}
+.microbox{
+    display: flex;
+    flex-direction:column;
+    height:100% !important;
+    width: 100%;
+    border:1px solid black;   
+}
+.brown{
+    height: 25% !important;
+    width:100%;
+    background-color:brown;
+}

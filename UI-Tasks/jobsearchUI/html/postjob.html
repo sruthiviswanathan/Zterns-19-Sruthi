@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/forms.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <title>POST JOB</title>
+</head>
+
+<body>
+        <div class="container">
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="mainpage.html">FIND JOB</a>
+                        <a href="findcompany.html">FIND COMPANY</a>
+                        <a href="searchbylocation.html">SEARCH BY LOCATION</a>
+                        <a href="postjob.html">POST JOB</a>
+                        <a href="viewprofile.html">YOUR PROFILE</a>
+                        <a href="requestvacancy.html">REQUEST A VACANCY</a>
+                        <a href="viewpublishedjobs.html">VIEW PUBLISHED JOBS</a>
+                </div>
+                <div class="navbar">
+                        <ul>
+                                <button onmouseover="openNav()" class="hambug"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                                <li>JOB HUNT</li>
+                                <a href="#">
+                                        <li style="float:right"><i class="fa fa-user-circle" aria-hidden="true"></i>LOGOUT</li>
+                                </a>
+                        </ul>
+                </div>
+                <div class="tit">
+                        <h3>YOUR NEXT HIRE IS HERE!!!</h3>
+                </div>
+                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+                <b>Rating: <span id=stars></span></b>
+                <form action="#" id="postjob" name="postjob" onsubmit="return validatePostJob()" method="post">
+                        <div class="form">
+                                <label for="select-job" class="row col-25"><b>JOB DESIGNATION</b></label>
+                                <div class="select-job">
+                                        <select id="job" name="job">
+                                                <option value="0">Select job designation:</option>
+                                                <option value="1">Java Developer</option>
+                                                <option value="2">PHP Developer</option>
+                                        </select>
+                                </div>
+                                <div class="nav">
+                                        <button type="button" id="add" onclick="openForm()">NEW</button>
+                                </div>
+                                <label for="location" class="row col-25"><b>LOCATION</b></label>
+                                <input type="text" class="row col-75" id="location" name="location" placeholder="Enter Job Location..">
+                                <label for="salary" class="row col-25"><b>SALARY</b></label>
+                                <input type="number" class="row col-75" id="salary" name="salary" placeholder="Enter Salary.."
+                                        step=".01">
+                                <label for="count" class="row col-25"><b>COUNT</b></label>
+                                <input type="number" class="row col-75" id="count" name="count" placeholder="Enter Vacancy Count..">
+                                <label for="description" class="row col-25"><b>JOB DESCRIPTION</b></label>
+                                <textarea  id="froala-editor" rows="4" cols="50" name="description" placeholder="Enter Job Description"></textarea>
+                        </div><br>
+                        <div class="nav">
+                                <input type="submit" value="PUBLISH" name="Submit">  
+                                <button type="reset" id="cancel" class="cancelbtn">CANCEL</button>
+                        </div>
+                </form>
+        </div>
+        <div class="form-popup" id="myForm">
+                <form action="login.html" class="form-container">
+                        <h3>ADD NEW JOB DESIGNATION</h3>
+                        <input type="text" placeholder="Enter new Job designation" name="newjob" required>
+                        <button type="submit" id="addjob" class="btn">ADD DESIGNATION</button>
+                        <button type="button" class="cancel btn" onclick="closeForm()">CLOSE</button>
+                </form>
+        </div>
+</body>
+<script src="../js/styles.js"></script>
+<script src="../js/validate.js"></script>
+</html>

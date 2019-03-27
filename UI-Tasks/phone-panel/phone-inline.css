@@ -1,0 +1,71 @@
+body{
+    width:500px;
+    height:500px;
+}
+.container{
+height: 100%;
+width: 100%;
+background-color: grey;
+border:1px solid black;
+}
+.row1{
+    height:20%;
+    width:100%;
+    background-color: grey;
+    border:1px solid black;
+}
+.element1{
+    display:inline-block;
+box-sizing: border-box;
+width:64%;
+height:100%;
+background-color:pink;
+}
+.element2{
+    display:inline-block;
+    box-sizing: border-box;
+    width:32%;
+    height:100%;
+    background-color:yellow;
+}
+.partition{
+    display: inline-block;
+	background-color: #ccc;
+	height: 100%;
+	width: 100%;
+}
+.inline-row{
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+	background-color:violet;
+	border:1px solid black;
+}
+.element3{
+    display:inline-block;
+    box-sizing: border-box;
+    width:48%;
+    height:100%;
+    background-color:green;
+}
+.element4{
+    display:inline-block;
+    box-sizing: border-box;
+    width:32%;
+    height:100%;
+    background-color:orange;
+}
+.top{
+    height: 50%;
+    box-sizing:border-box;
+}
+.half{
+    height:47%;
+}
+.bottom{
+	height: 35%;
+	box-sizing: border-box;
+}
+.bdr{
+	border:1px solid black;
+}

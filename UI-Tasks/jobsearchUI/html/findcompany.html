@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Find Company</title>
+        <link rel="stylesheet" href="../css/companydetails.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div id="main">
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="mainpage.html">FIND JOB</a>
+                        <a href="findcompany.html">FIND COMPANY</a>
+                        <a href="searchbylocation.html">SEARCH BY LOCATION</a>
+                        <a href="postjob.html">POST JOB</a>
+                        <a href="viewprofile.html">YOUR PROFILE</a>
+                        <a href="requestvacancy.html">REQUEST A VACANCY</a>
+                        <a href="viewpublishedjobs.html">VIEW PUBLISHED JOBS</a>
+                </div>
+                <div class="navbar">
+                        <ul>
+                                <button onmouseover="openNav()" class="hambug"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                                <li>JOB HUNT</li>
+                                <a href="login.html">
+                                        <li style="float:right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>SIGN IN</li>
+                                </a>
+
+                        </ul>
+                </div>
+
+                <div class="row">
+                        <form action="#">
+                                <div class="col-20 col-xs-12 col-sm-12">
+                                        <label for="job">SEARCH FOR COMPANY</label>
+                                </div>
+                                <div class="col-60 col-xs-12 col-sm-12">
+                                        <input type="text" id="company" name="company" placeholder="Search for Company.."
+                                                required><i class="icon fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 col-xs-12 col-sm-12">
+                                        <input type="submit" class="col-xs-12 col-sm-12" value="SEARCH">
+                                </div>
+                        </form>
+                </div>
+                <div class="tit">
+                        <h3>POPULAR COMPANIES</h3>
+                </div>
+                <div class="maincard">
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="companydetails.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="companydetails.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="companydetails.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                        <div class="card col-sm-6 col-xs-12">
+                                <div class="container">
+                                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaW4BTgOUrtjclwmlgttyWsHv0ykHPDWgg_J0lCZHdNu5T4vY"
+                                                        alt="Avatar" style="width:50%"></a>
+                                        <h4><b>Company Name</b></h4>
+                                        <p>Overall Rating</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+<script src="../js/styles.js"></script>
+
+</html>

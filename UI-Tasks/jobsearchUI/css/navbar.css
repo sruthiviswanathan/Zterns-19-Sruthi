@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    height:100vh;
+   
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1px;
+    overflow: hidden;
+    background-color:  dodgerblue;
+    font-weight: bold;
+    
+}
+li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: dodgerblue;
+    border: transparent;
+}
+
+li a:hover {
+    opacity: 0.8;
+}
+
+a:active, a:hover {
+    opacity: 0.8;
+}
+.icon {
+    color:dodgerblue;
+    float:right;
+    position:relative;
+    top: -29px;
+    right: 10px;
+  }
+  .fa-user-circle,.fa-pencil-square-o{
+    margin-right: 6px;
+  }
+
+    .fa-bars{
+        float: left;
+        margin-top: 13px;
+        margin-left: 5px;
+    
+      }
+    
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        left: 0;
+        background-color: lightskyblue;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        overflow: hidden;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        transition: 0.3s;
+        color: black;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+    
+      ul button{
+          border:none;
+      }
+    
+      .hambug{
+          width:2%;
+          float:left;
+          background-color:dodgerblue ;
+          font-size: 18px;
+          color: white;
+          cursor: pointer;
+          margin-top: -15px;
+      }  

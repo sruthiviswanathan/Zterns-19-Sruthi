@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="blog.css" />
+</head>
+<body onload="fetchallnotes()">
+    <div class="pagecontainer">
+            <div class="split left">
+                   <div class="top">
+                       <label for="title"></label>
+                    <input type="text"  placeholder="Enter a title" name="title" required>
+                    <button type="submit"class="col-sm-12"><i class="icon fa fa-plus-circle" aria-hidden="true"></i></button>
+                    </div>
+                <div class="bottom">
+                        <div class="scroll">
+                           <ul id="menu">
+                              
+                           </ul>
+                            <div>
+                </div>
+        </div>
+        <div class="split right my-content" id="txt">
+                <button type="button"class="col-sm-12" id="note">ADD A NOTE <i class="icon fa fa-plus-circle" aria-hidden="true"></i></button>
+            <textarea id="txtarea"  placeholder="type your text here"></textarea>
+          
+        </div>
+
+    </div>
+</body>
+<script src="blog1.js"></script>
+</html>

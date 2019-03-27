@@ -1,0 +1,207 @@
+ * {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  body{
+     font-family: Arial, Helvetica, sans-serif;
+     color:black;
+     background-color: whitesmoke;
+     
+    }
+
+    .container {
+        /* padding:81px 0px 20px 0px; */
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 300px;
+        
+    }
+    #defaultfields {
+      display:block;
+    }
+
+
+    #adminoptional {
+      display:none;
+    }
+    .forms{
+      margin-top: 50px;
+    }
+    .tit {
+        color: dodgerblue;
+        text-align: center;
+        background-color: #ccc;
+        padding:2px;
+        margin-top:10px;
+      }
+      
+  .nav{
+    margin: 0px 20px 20px -10px;
+    text-align: center;
+    width:100%;
+    height:10%;
+  }
+  .col-25 {
+    display:block;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    display:block;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.check {
+  display:inline-block;
+}
+input[type=text] ,input[type=email],input[type=password],input[type="number"],textarea, select,input[type="file"]{
+
+    margin: 10px 20px 0px 350px;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize:vertical;
+  }
+
+  input[type="submit"]{
+    
+  display: inline-block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+  label,.checkbox {
+    margin: 10px 20px 0px 350px;
+    padding: 29px 12px 12px 0;
+    display: block;
+  }
+  
+  button {
+    display: inline-block;
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  .signup.button , .login.button{
+    margin-left: 100px;
+    margin-right:0px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+   } 
+
+   .active, .btn:hover {
+    background-color: blue;
+    border:1px solid whitesmoke;
+  }
+/*   
+   input[type=submit]:hover {
+    margin:20px;
+    background-color: lightblue;
+  } */
+  .cancelbtn {
+    width: 15%;
+    padding: 14px 20px;
+    background-color: #f44336;
+  } 
+
+.addjob {
+  width:10%;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 200px;
+  right:0px;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 18px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container .btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+input.invalid,select.invalid {
+  background-color: #ef5350;
+}
+
+@media (max-width:319px) {
+  .col-25, .col-75, input[type=submit], .nav ,input[type=text] 
+  ,input[type=email],input[type=password],.label,.cancelbtn,input[type="number"],input[type="file"],textarea,select,.tit{
+    width: 100%;
+    margin: 0;
+  }
+} 
+
+@media (min-width:320px) and (max-width:1025px) {
+  .col-25, .col-75, input[type=submit],.nav,input[type=text] 
+  ,input[type=email],input[type=password],.label,button,.cancelbtn,input[type="number"],input[type="file"],textarea,select,.tit{
+    width: 100%;
+    margin: 0;
+  }
+ 
+} 
+
