@@ -12,7 +12,6 @@ import com.zilker.jpa.beans.Speciality;
 
 public interface SpecialityRepository extends JpaRepository<Speciality, Integer> {
 
-	// @Query("SELECT CASE WHEN COUNT(c) > 0 THEN true ELSE false END FROM Speciality c WHERE c.name = :name")
 	  boolean existsByName(@Param("name") String name);
 	
 	@Query("SELECT d.id FROM Speciality d WHERE d.name = ?1")
@@ -20,4 +19,10 @@ public interface SpecialityRepository extends JpaRepository<Speciality, Integer>
 	
 	@Query("SELECT d.name FROM Speciality d WHERE d.id = ?1")
 	String findById(@Param("id") int id);
+
+	
+
+	
+
+
 }

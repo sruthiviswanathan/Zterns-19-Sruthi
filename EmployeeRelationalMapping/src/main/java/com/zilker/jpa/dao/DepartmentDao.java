@@ -10,7 +10,6 @@ import com.zilker.jpa.beans.Department;
 import com.zilker.jpa.beans.Employee;
 import com.zilker.jpa.customException.ApplicationException;
 import com.zilker.jpa.customException.DepartmentNotFoundException;
-import com.zilker.jpa.customException.EmployeeNotFoundException;
 import com.zilker.jpa.repository.DepartmentRepository;
 import com.zilker.jpa.repository.EmployeeRepository;
 

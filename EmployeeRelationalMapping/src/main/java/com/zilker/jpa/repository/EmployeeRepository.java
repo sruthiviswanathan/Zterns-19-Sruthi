@@ -21,4 +21,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	 
 	 @Query("SELECT CASE WHEN COUNT(c) > 0 THEN true ELSE false END FROM Employee c WHERE c.id = :id")
 	 boolean existsById(@Param("id") int id);
+
+	// @Query("DELETE  FROM Employee WHERE specialty_id = ?1 AND employee_id = ?2")
+	
 }

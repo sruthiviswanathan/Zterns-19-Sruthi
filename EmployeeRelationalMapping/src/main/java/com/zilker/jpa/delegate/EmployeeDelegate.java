@@ -11,6 +11,8 @@ import com.zilker.jpa.customException.ApplicationException;
 import com.zilker.jpa.customException.DepartmentNotFoundException;
 import com.zilker.jpa.customException.EmailAlreadyExistsException;
 import com.zilker.jpa.customException.EmployeeNotFoundException;
+import com.zilker.jpa.customException.EntryNotFoundException;
+import com.zilker.jpa.customException.SpecialityNotFoundException;
 import com.zilker.jpa.dao.EmployeeDao;
 
 
@@ -119,6 +121,27 @@ public class EmployeeDelegate {
 			flag = employeeDao.saveSpeciality(id,speciality);
 		
 		} catch (EmployeeNotFoundException e) {
+			throw e;
+		}
+		catch (Exception e) {
+			throw new ApplicationException("Exception","Exception");
+		}
+		return flag;
+	}
+
+	public boolean DeleteEmployeeSpeciality(int id, List<Speciality> speciality)throws ApplicationException {
+		// TODO Auto-generated method stub
+		boolean flag;
+		try {
+			flag = employeeDao. DeleteEmployeeSpeciality(id,speciality);
+		
+		} catch (EmployeeNotFoundException e) {
+			throw e;
+		}
+		catch (SpecialityNotFoundException e) {
+			throw e;
+		}
+		catch (EntryNotFoundException e) {
 			throw e;
 		}
 		catch (Exception e) {

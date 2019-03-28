@@ -114,7 +114,7 @@ public class Employee {
 	}
 	
 	public List<Speciality> getSpeciality() {
-		return speciality;
+		return this.speciality;
 	}
 	public void setSpeciality(List<Speciality> speciality) {
 		this.speciality = speciality;

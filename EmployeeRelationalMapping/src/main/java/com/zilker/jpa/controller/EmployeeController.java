@@ -116,4 +116,22 @@ public class EmployeeController {
 		
 	}
 	
+	@DeleteMapping("/employees/speciality/{userId}")
+	public <T> ResponseEntity<?>  DeleteEmployeeSpeciality(@PathVariable("userId") int id,@RequestBody List<Speciality> speciality) {
+		boolean flag;
+		try {	
+		
+			flag = employeeDelegate.DeleteEmployeeSpeciality(id,speciality);
+			if(flag==true) {
+				return reponseGeneratorUtil.successResponse("SPECIALITY DELETED");		
+				}else {
+					return reponseGeneratorUtil.generateMessage("ERROR DELETING SPECIALITY");	
+				}
+		
+		}catch(ApplicationException e) {
+			return reponseGeneratorUtil.errorResponse(e);
+		}
+		
+	}
+	
 }

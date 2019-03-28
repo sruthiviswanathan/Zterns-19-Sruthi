@@ -30,6 +30,10 @@ public class Speciality {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Speciality [id=" + id + ", name=" + name + "]";
+	}
 	
 	
 	
